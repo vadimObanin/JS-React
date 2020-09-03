@@ -9,15 +9,18 @@ const personalMovieDB = {
 };
 
 for (let i = 0; i < 2; i++) {
+  let a;
+  let b;
   do {
-    var a = prompt("Один из последних просмотренных фильмов", "");
+    a = prompt("Один из последних просмотренных фильмов", "");
   } while (a === null || a.length > 50 || a === "");
   do {
-    var b = prompt("На сколько оцените его", "");
+    b = prompt("На сколько оцените его", "");
   } while (b === null || b.length > 50 || b === "");
 
   personalMovieDB.movies[a] = b;
 }
+console.log(personalMovieDB);
 
 if (personalMovieDB.count < 10) {
   alert("Просмотрено довольно мало фильмов");
