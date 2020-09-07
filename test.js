@@ -1,6 +1,11 @@
-const arr = [3, 3, 32, 2, 23];
-const arr2 = [];
-for (const element of arr) {
-  arr[0] = element;
-}
-console.log(arr2);
+const lena = {
+  color: "red",
+  age: 32,
+  foo() {
+    console.log("privet");
+  },
+};
+
+const lera = Object.create(lena);
+const igor = lera.foo();
+console.log(igor);
