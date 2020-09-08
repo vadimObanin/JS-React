@@ -5,14 +5,8 @@ const options = {
     roi: 4,
     ron: 3,
   },
-  makeTest: function () {
-    console.log("test");
-  },
 };
 
-
-const { roi, ron } = options.arr;
-console.log(options.arr.roi);
-console.log(ron);
-
-// console.log(Object.keys(options).length);
+const lera = Object.create(lena);
+const igor = lera.foo();
+console.log(igor);
