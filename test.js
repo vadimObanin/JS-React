@@ -5,8 +5,14 @@ const options = {
     roi: 4,
     ron: 3,
   },
+  makeTest: function () {
+    console.log("test");
+  },
 };
 
-for (let variable in options) {
-  console.log(`Ключ массива ${variable} имеет значение ${options[variable]}`);
-}
+
+const { roi, ron } = options.arr;
+console.log(options.arr.roi);
+console.log(ron);
+
+// console.log(Object.keys(options).length);
