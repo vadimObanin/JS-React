@@ -1,8 +1,9 @@
-const lena = {
+const options = {
+  name: "Petr",
   color: "red",
-  age: 32,
-  foo() {
-    console.log("privet");
+  arr: {
+    roi: 4,
+    ron: 3,
   },
 };
 
