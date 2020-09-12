@@ -1,2 +1,5 @@
-const qwe = "pitoras";
-console.log(qwe.slice(2, 5));
+const color = {
+  a: "red",
+  b: "blue",
+};
+console.log(color.a);
