@@ -64,3 +64,29 @@ const personalMovieDB = {
     }
   },
 };
+writeYourGenres: function () {
+  for (i = 1; i < 4; i++) {
+    let genres = prompt(`Ваш любимый жанр под номером ${i}`, "");
+    if (genres === "" || genres == null) {
+      console.log("Вы ввели не корректные данные");
+      i--;
+    } else {
+      personalMovieDB.genres[i - 1] = genres;
+    }
+  }
+},
+toggleVisibleMyDB: function () {
+  if (personalMovieDB.private) {
+    personalMovieDB.private = false;
+  } else {
+    personalMovieDB.private = true;
+  }
+},
+showMyDb: function () {
+  if (personalMovieDB.private === false) {
+    console.log(personalMovieDB);
+    console.log("Все сработало, поздравляю");
+  }
+},
+};
+
