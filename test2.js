@@ -1,7 +1,7 @@
-const qwe = {
-  health: 100,
-  warrior: 200,
-};
+let num1 = 3;
+num1++;
+let num2 = num1--;
 
-const asd = Object.create(qwe);
-console.log(asd.warrior);
+console.log(1 / 0);
+console.log(num1++);
+console.log(--num2);
