@@ -1,0 +1,13 @@
+.red {
+    color: red;
+}
+.headOne {
+    top: 0;
+    left: 0;
+}
+.big {
+    top: 200px;
+    left: 500px;
+    /*transform: rotate(720deg);*/
+    transition-duration: 2s;
+}
