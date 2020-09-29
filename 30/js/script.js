@@ -12,36 +12,40 @@
 
 5) Добавить нумерацию выведенных фильмов */
 
-'use strict';
+"use strict";
 
 const movieDB = {
-    movies: [
-        "Логан",
-        "Лига справедливости",
-        "Ла-ла лэнд",
-        "Одержимость",
-        "Скотт Пилигрим против..."
-    ]
+  movies: [
+    "Логан",
+    "Лига справедливости",
+    "Ла-ла лэнд",
+    "Одержимость",
+    "Скотт Пилигрим против...",
+  ],
 };
 const adv = document.querySelectorAll(".promo__adv img");
-adv.forEach(item => {
-    item.remove();
-})
+adv.forEach((item) => {
+  item.remove();
+});
 
 const bg = document.querySelector(".promo__bg");
 const genre = bg.querySelector(".promo__genre");
-genre.textContent = 'драма';
+genre.textContent = "драма";
 
 bg.style.backgroundImage = 'url("img/bg.jpg")';
 
 movieDB.movies.sort();
 
 const movieList = document.querySelector(".promo__interactive-list");
-movieList.innerHTML = '';
+movieList.innerHTML = "";
 
 movieDB.movies.forEach((item, i) => {
-    movieList.innerHTML += `<li class="promo__interactive-item">${i + 1}: ${item}
+  movieList.innerHTML += `<li class="promo__interactive-item">${i + 1}: ${item}
                             <div class="delete"></div>
                         </li>`;
-})
-
+});
+for (let node of document.body.childNodes) {
+  if (node.nodeName == "#text") {
+    continue;
+  }
+}
