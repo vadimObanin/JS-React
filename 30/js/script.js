@@ -49,3 +49,26 @@ for (let node of document.body.childNodes) {
     continue;
   }
 }
+
+const btn = document.querySelector("button");
+btn.addEventListener("click", (e) => {
+  e.preventDefault();
+  let inp = document.querySelector(".adding__input").value;
+  let str = "";
+  if (inp.length > 21) {
+    str = inp.substr(0, 20) + "...";
+  } else {
+    str = inp;
+  }
+  movieDB.movies.push(str);
+  console.log(movieDB.movies);
+});
+
+function abc() {
+  let pop = this;
+  pop.parentElement.remove();
+}
+let dell = document.querySelectorAll(".delete");
+dell.forEach(function (element) {
+  element.addEventListener("click", abc);
+});
