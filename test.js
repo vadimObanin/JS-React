@@ -23,6 +23,7 @@ function copy(mainObj) {
   }
   return objCopy;
 }
+
 const prettier = 6;
 
 const numbers = {

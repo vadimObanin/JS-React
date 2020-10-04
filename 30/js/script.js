@@ -68,6 +68,7 @@ function abc() {
   let pop = this;
   pop.parentElement.remove();
 }
+
 let dell = document.querySelectorAll(".delete");
 dell.forEach(function (element) {
   element.addEventListener("click", abc);
